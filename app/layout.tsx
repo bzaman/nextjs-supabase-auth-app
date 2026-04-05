@@ -43,7 +43,7 @@ export default function RootLayout({
       ])}
       suppressHydrationWarning
     >
-      <body className="min-h-svh">
+      <body className="min-h-svh text-slate-blue bg-almond">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
