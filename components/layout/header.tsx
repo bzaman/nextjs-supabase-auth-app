@@ -48,10 +48,10 @@ export default function Header() {
             </button>
           ) : (
             <>
-              <Link href="/email-password" className="hover:text-white transition-colors">
+              <Link href="/auth/login" className="transition-colors">
                 Sign In
               </Link>
-              <Link href="/google-login" className="hover:text-white transition-colors">
+              <Link href="/google-login" className="transition-colors">
                 Register
               </Link>
             </>

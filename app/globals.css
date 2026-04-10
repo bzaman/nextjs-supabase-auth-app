@@ -21,6 +21,7 @@
 
   --color-heading: var(--ink-violet);
   --color-card-background: var(--dusty-lavender);
+  --color-muted-foreground: var(--dusty-violet);
 
   --color-primary: var(--coral);
   --color-secondary: var(--dusty-violet);
