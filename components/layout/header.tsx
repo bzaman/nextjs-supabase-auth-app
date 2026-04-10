@@ -33,7 +33,7 @@ export default function Header() {
       <nav className="container flex items-center justify-between">
         <Logo
           href="/"
-          size={34}
+          size={28}
           fill="var(--ink-soft)"
           title="Brand name"
         />
