@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Roboto_Condensed, Playfair_Display } from "next/font/google";
 
-import Header from "@/components/layout/header";
 import { APP_NAME, APP_DESC, SERVER_URL } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
@@ -20,11 +19,15 @@ const roboto_condensed = Roboto_Condensed({
 
 export const metadata: Metadata = {
   title: {
-    template: `%s | Auth App`,
+    template: `%s | app`,
     default: APP_NAME,
   },
   description: APP_DESC,
   metadataBase: new URL(SERVER_URL),
+  authors: [{
+    name: "Badiuzzaman",
+    url: "https://yoursite.comhttps://www.upwork.com/freelancers/~01dc1a347430f5ff7c",
+  }],
 };
 
 export default function RootLayout({
@@ -54,7 +57,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
           {children}
         </ThemeProvider>
       </body>
