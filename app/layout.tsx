@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Roboto_Condensed, Playfair_Display } from "next/font/google";
 
+import Header from "@/components/layout/header";
 import { APP_NAME, APP_DESC, SERVER_URL } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
@@ -35,21 +36,25 @@ export default function RootLayout({
     <html
       lang="en"
       data-scroll-behavior="smooth"
-      className={cn([
-        playfair_display.variable,
-        roboto_condensed.variable,
-        "antialiased",
-        "scroll-smooth",
-      ])}
+      className={cn(
+        [
+          playfair_display.variable,
+          roboto_condensed.variable,
+          "antialiased",
+          "scroll-smooth",
+        ],
+        { mofij: false },
+      )}
       suppressHydrationWarning
     >
-      <body className="min-h-svh text-slate-blue bg-almond">
+      <body className="font-sans-serif min-h-svh text-slate-blue bg-almond text-base">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
+          <Header />
           {children}
         </ThemeProvider>
       </body>
