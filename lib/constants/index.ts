@@ -1,5 +1,5 @@
-export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "Supabase Auth";
+export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "bzaman Studio";
 export const APP_DESC =
-  process.env.NEXT_PUBLIC_DESC || "authentication and authorization";
+  process.env.NEXT_PUBLIC_DESC || "A practical guide to authentication patterns, session management, protected routes, and RLS — built for React and Next.js";
 export const SERVER_URL =
   process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:3000/";
