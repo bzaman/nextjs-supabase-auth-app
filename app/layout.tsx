@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SERVER_URL),
   authors: [{
     name: "Badiuzzaman",
-    url: "https://yoursite.comhttps://www.upwork.com/freelancers/~01dc1a347430f5ff7c",
+    url: "https://www.upwork.com/freelancers/~01dc1a347430f5ff7c",
   }],
 };
 
